@@ -7,6 +7,7 @@ Introduction:
   
  View: View is area for user to send a delegate request to presenter. Application may have many numbers of views.
 
- Presenter: It’s intermediate layer between model and presenter. It’s act upon the model and view . Retrieve a data from the model and format it to for display in view.
+ Presenter: It’s intermediate layer between model and presenter. It’s act upon the model and view .
+            Retrieve a data from the model and format it to for display in view.
 
 
