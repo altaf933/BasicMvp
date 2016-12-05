@@ -7,4 +7,5 @@ package com.example.interfaces;
 public interface Presenter {
 
     void getBackgroundAsyncData();
+    void onDestroy();
 }

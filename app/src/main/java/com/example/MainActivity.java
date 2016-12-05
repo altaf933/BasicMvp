@@ -5,12 +5,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.example.altafhshaikh.androidmvpsimple.R;
 import com.example.interfaces.MyView;
-import com.example.presenter.MyPresenter;
-import com.example.services.MyContentServices;
-
-import java.util.List;
+import com.example.interfaces.Presenter;
+import com.example.model.DummyUsersModel;
+import com.example.presenter.PresenterImpl;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -24,7 +22,7 @@ public class MainActivity extends AppCompatActivity implements MyView {
     @BindView(R.id.txtLoaditems)
     TextView txtLoaditems;
 
-    MyPresenter presenter;
+    Presenter presenter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,21 +30,36 @@ public class MainActivity extends AppCompatActivity implements MyView {
         setContentView(R.layout.activity_main);
 
         ButterKnife.bind(this);
-
-        presenter = new MyPresenter(this, new MyContentServices());
+        presenter = new PresenterImpl(this);
     }
 
     @OnClick(R.id.btnLoad)
     public void loadItems() {
-        presenter.load();
+        if (presenter != null)
+            presenter.getBackgroundAsyncData();
+    }
+
+
+    @Override
+    public void showProgressDialoge() {
+
     }
 
     @Override
-    public void showItems(List<String> items) {
-        String result = null;
-        for (int i = 0; i < items.size(); i++) {
-            txtLoaditems.setText(result += items.get(i));
-        }
+    public void setResult(DummyUsersModel userDetail) {
+
+    }
+
+    @Override
+    public void errorDialoge() {
+
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        //Unscribed your detail
+        presenter.onDestroy();
 
     }
 }
