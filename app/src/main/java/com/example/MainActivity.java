@@ -19,8 +19,12 @@ public class MainActivity extends AppCompatActivity implements MyView {
     @BindView(R.id.btnLoad)
     Button btnLoad;
 
-    @BindView(R.id.txtLoaditems)
-    TextView txtLoaditems;
+    @BindView(R.id.txtLoaditems0)
+    TextView txtLoaditems0;
+    @BindView(R.id.txtLoaditems1)
+    TextView txtLoaditems1;
+    @BindView(R.id.txtLoaditems2)
+    TextView txtLoaditems2;
 
     Presenter presenter;
 
@@ -47,6 +51,12 @@ public class MainActivity extends AppCompatActivity implements MyView {
 
     @Override
     public void setResult(DummyUsersModel userDetail) {
+        if (userDetail.getResults().get(0).getName() != null) {
+            txtLoaditems0.setText(userDetail.getResults().get(0).getName().getFirst());
+            txtLoaditems1.setText(userDetail.getResults().get(0).getName().getLast());
+            txtLoaditems2.setText(userDetail.getResults().get(0).getName().getTitle());
+
+        }
 
     }
 
