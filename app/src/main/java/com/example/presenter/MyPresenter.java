@@ -1,7 +1,7 @@
 package com.example.presenter;
 
-import com.example.interfaces.MyServices;
-import com.example.interfaces.MyView;
+import com.example.interfaces.IMyServices;
+import com.example.interfaces.IMyView;
 
 import java.util.List;
 
@@ -11,10 +11,10 @@ import java.util.List;
 
 public class MyPresenter {
 
-    private MyView view;
-    private MyServices myServices;
+    private IMyView view;
+    private IMyServices myServices;
 
-    public MyPresenter(MyView view, MyServices myServices) {
+    public MyPresenter(IMyView view, IMyServices myServices) {
         this.view = view;
         this.myServices = myServices;
     }

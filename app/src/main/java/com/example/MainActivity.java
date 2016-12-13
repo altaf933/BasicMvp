@@ -6,7 +6,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.altafhshaikh.androidmvpsimple.R;
-import com.example.interfaces.MyView;
+import com.example.interfaces.IMyView;
 import com.example.presenter.MyPresenter;
 import com.example.services.MyContentServices;
 
@@ -16,7 +16,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class MainActivity extends AppCompatActivity implements MyView {
+public class MainActivity extends AppCompatActivity implements IMyView {
 
     @BindView(R.id.btnLoad)
     Button btnLoad;

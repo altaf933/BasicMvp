@@ -1,6 +1,6 @@
 package com.example.services;
 
-import com.example.interfaces.MyServices;
+import com.example.interfaces.IMyServices;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,7 +9,7 @@ import java.util.List;
  * Created by altaf.h.shaikh on 10/28/2016.
  */
 
-public class MyContentServices implements MyServices {
+public class MyContentServices implements IMyServices {
     @Override
     public List<String> getItems() {
         ArrayList<String> items = new ArrayList<>();
