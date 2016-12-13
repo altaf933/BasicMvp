@@ -1,0 +1,18 @@
+# BasicMvp
+Android uses a simple MVP pattern.
+
+
+Introduction:
+ Model: Data can access by this layer such as database API and remote data API.
+  
+ View: View is area for user to send a delegate request to presenter. Application may have many numbers of views.
+
+ Presenter: It’s intermediate layer between model and presenter. It’s act upon the model and view .
+            Retrieve a data from the model and format it to for display in view.
+            
+
+ [Basic MVP pattern](https://github.com/altaf933/BasicMvp)
+ [Basic MVP with retrofit API](https://github.com/altaf933/BasicMvp/tree/MVPAPIIntigrate)
+ 
+
+
