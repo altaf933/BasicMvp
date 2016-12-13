@@ -38,7 +38,6 @@ public class PresenterImpl implements Presenter {
                 .subscribe(new Subscriber<DummyUsersModel>() {
                     @Override
                     public void onCompleted() {
-
                     }
 
                     @Override
