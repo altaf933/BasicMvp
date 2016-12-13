@@ -14,8 +14,45 @@ Presentation : It's middle layer it always keep communicate between model and vi
 
 
 ## Code Example
-
-
+step 1: create interface  for your view ```IMyView.java```
+         
+         public interface IMyView {
+                 void showItems(List<String> items);
+           }         
+           
+step 2: create interface for your presentation ```IMyServices.java ``` it will notify when long running task finish.
+        
+        
+         public interface IMyServices {
+                List<String> getItems();
+          }
+step 3: create class ```MyContentServices.java ``` usally it's include your long running operation that notify your presenter by                 implement ```IMyServices.java ```.
+    
+    public class MyContentServices implements IMyServices {
+       @Override
+       public List<String> getItems() {
+         ArrayList<String> items = new ArrayList<>();
+         items.add("one");
+         items.add("two");
+         items.add("three");
+         items.add("four");
+         return items;
+       }
+    }
+ step 4: Implement ```IMyView.java``` to your ```Activity``` or ```Fragment``` class it will override ```showItems(List<String> items)``` method in Activity.
+      
+  
+ step 5: Now merge all your step into ```Activity.java``` file at any event of your specific view.
+          
+         private  MyPresenter presenter;
+         presenter = new MyPresenter(this, new MyContentServices());
+         
+           @OnClick(R.id.btnLoad)
+            public void loadItems() {
+               presenter.load();
+           }
+         
+               
 ## Motivation
 
 A short description of the motivation behind the creation and maintenance of the project. This should explain **why** the project exists.
