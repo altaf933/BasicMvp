@@ -61,9 +61,13 @@ A short description of the motivation behind the creation and maintenance of the
 
 Provide code examples and explanations of how to get the project.
 
-## API Reference
+##  Reference
+I am very thankful to this reference:
 
-Depending on the size of the project, if it is small and simple enough the reference docs can be added to the README. For medium size to larger projects it is important to at least provide a link to where the API reference docs live.
+- https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93presenter
+- http://www.infragistics.com/community/blogs/todd_snyder/archive/2007/10/17/mvc-or-mvp-pattern-whats-the-difference.aspx
+- http://antonioleiva.com/mvp-android/
+- https://github.com/googlesamples/android-architecture
 
 ## Tests
 
