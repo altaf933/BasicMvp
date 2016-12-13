@@ -44,11 +44,11 @@ step 3: create class ```MyContentServices.java ``` usally it's include your long
   
  step 5: Now merge all your step into ```Activity.java``` file at any event of your specific view.
           
-         private  MyPresenter presenter;
-         presenter = new MyPresenter(this, new MyContentServices());
-         
-           @OnClick(R.id.btnLoad)
-            public void loadItems() {
+      private  MyPresenter presenter;
+      presenter = new MyPresenter(this, new MyContentServices());
+        
+        @OnClick(R.id.btnLoad)
+           public void loadItems() {
                presenter.load();
            }
          
