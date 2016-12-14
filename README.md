@@ -60,10 +60,6 @@ and divide this architecture even in more simple way.:laughing:
 
  https://github.com/googlesamples/android-architecture
 
-## Installation
-
-Provide code examples and explanations of how to get the project.
-
 ##  Reference
 I am very thankful to this reference:
 
@@ -74,7 +70,7 @@ I am very thankful to this reference:
 
 ## Tests
 
-Describe and show how to run the tests with code examples.
+
 
 ## Contributors
 If you would like to contribute code you can do so through GitHub by forking the repository and sending a pull request.
