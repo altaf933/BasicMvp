@@ -55,7 +55,10 @@ step 3: create class ```MyContentServices.java ``` usally it's include your long
                
 ## Motivation
 
-A short description of the motivation behind the creation and maintenance of the project. This should explain **why** the project exists.
+I got the inspiration from this google android architecture . I started though it's  **Basic Model-View-Presenter architecture**
+and divide this architecture even in more simple way.:laughing:
+
+ https://github.com/googlesamples/android-architecture
 
 ## Installation
 
