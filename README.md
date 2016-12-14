@@ -3,12 +3,12 @@
 Android MVP architecture is introduce for make a project flexible, maintainable and easily apply Unit test.
 In MVP presenter assume the functionality of the middle man . In MVP all core logic pushed to presentation layer.
 
-Model : It's give a flexibility of how data stored and retrieved . Presentation layer responsible for fetch data from the model
+**Model** : It's give a flexibility of how data stored and retrieved . Presentation layer responsible for fetch data from the model
         and provide to a view layer.
 
-View :  It's display data and routes user event to presentation layer.
+**View** :  It's display data and routes user event to presentation layer.
 
-Presentation : It's middle layer it always keep communicate between model and view layer. It retrive a data from the model and formate it for display in the view.
+**Presentation** : It's middle layer it always keep communicate between model and view layer. It retrive a data from the model and formate it for display in the view.
                Business logic live in the presenter and relies on the view to do Android work.
 
 
