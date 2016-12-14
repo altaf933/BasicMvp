@@ -70,7 +70,10 @@ I am very thankful to this reference:
 
 ## Tests
 
-
+## Road map
+ 
+ Next tutorial is implement MVP + Retrofit 2 + RXJava(Read me for this tutorial not updated.)
+ https://github.com/altaf933/BasicMvp/tree/MVPAPIIntigrate
 
 ## Contributors
 If you would like to contribute code you can do so through GitHub by forking the repository and sending a pull request.
