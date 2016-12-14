@@ -68,8 +68,6 @@ I am very thankful to this reference:
 - http://antonioleiva.com/mvp-android/
 - https://github.com/googlesamples/android-architecture
 
-## Tests
-
 ## Road map
  
  Next tutorial is implement MVP + Retrofit 2 + RXJava(Read me for this tutorial not updated.)
