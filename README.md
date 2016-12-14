@@ -77,8 +77,7 @@ I am very thankful to this reference:
 Describe and show how to run the tests with code examples.
 
 ## Contributors
-
-Let people know how they can dive into the project, include important links to things like issue trackers, irc, twitter accounts if applicable.
+If you would like to contribute code you can do so through GitHub by forking the repository and sending a pull request.
 
 ## License
 
